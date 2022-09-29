@@ -1,3 +1,5 @@
+library(statcomp)
+
 get.permutation.lempel.ziv.complexity <- function(signal, embdim){
   opd = ordinal_pattern_time_series(x = signal, ndemb = embdim)
   opd <- opd[!is.na(opd)]
